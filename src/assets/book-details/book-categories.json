@@ -1,0 +1,18 @@
+[
+    {
+        "Name": "Drama",
+        "ID": 10
+    },
+    {
+        "Name": "Science fiction",
+        "ID": 20
+    },
+    {
+        "Name": "Satire",
+        "ID": 30
+    },
+    {
+        "Name": "Horror",
+        "ID": 40
+    }
+]

@@ -1,0 +1,26 @@
+  <form class="modal-content animate">
+    <div class="imgcontainer">
+      <span (click)="closeLoginModalPopup()" class="close" title="Close Modal">&times;</span>
+      <img src="../../assets/images/login_avatar.jpg" alt="Avatar" class="avatar">      
+      <button type="button" class="toggleBtn left-65" id= "userLogin" (click) = "userLogin();">User Login</button>
+      <button type="button" class="toggleBtn left-170" id= "adminLogin" (click) = "adminLogin();">Admin Login</button>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" (click) = 'validateUser();'>Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" (click)="closeLoginModalPopup()" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
